@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Punto 5</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Punto 5: Libro de mayor Rating</h1>
+        <div class="card" th:if="${libroMax != null}">
+            <p><strong>Título:</strong> <span th:text="${libroMax.titulo}"></span></p>
+            <p><strong>Autor:</strong> <span th:text="${libroMax.autor}"></span></p>
+            <p><strong>Rating:</strong> <span th:text="${libroMax.rating}"></span></p>
+        </div>
+        <a href="/" class="btn">← Volver </a>
+    </div>
+</body>
+</html>

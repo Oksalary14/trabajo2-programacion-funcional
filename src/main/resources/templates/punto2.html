@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Punto 2</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Punto 2: Estadísticas de Páginas</h1>
+        <div class="stat-box">
+            <div class="stat-item">
+                <strong th:text="${conteo}"></strong>
+                <span>Conteo de libros</span>
+            </div>
+            <div class="stat-item">
+                <strong th:text="${suma}"></strong>
+                <span>Sumatoria Total</span>
+            </div>
+            <div class="stat-item">
+                <strong th:text="${promedio}"></strong>
+                <span>Promedio</span>
+            </div>
+            <div class="stat-item">
+                <strong th:text="${minimo}"></strong>
+                <span>Mínimo</span>
+            </div>
+            <div class="stat-item">
+                <strong th:text="${maximo}"></strong>
+                <span>Máximo</span>
+            </div>
+        </div>
+        <a href="/" class="btn">← Volver </a>
+    </div>
+</body>
+</html>

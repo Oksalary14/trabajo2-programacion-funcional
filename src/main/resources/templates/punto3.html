@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Punto 3</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Punto 3: Listado libros</h1>
+        
+        <h3>1. Lista de todos los Libros:</h3>
+        <ul>
+            <li th:each="objeto : ${listaObjetos}" th:text="${objeto}"></li>
+        </ul>
+
+        <h3>2. Lista derivada (Título del libro):</h3>
+        <ul>
+            <li th:each="titulo : ${listaTitulos}" th:text="${titulo}"></li>
+        </ul>
+
+        <a href="/" class="btn">← Volver </a>
+    </div>
+</body>
+</html>
